@@ -7,25 +7,22 @@ String selected = "";
 
 %>
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="styles.css" type="text/css"/>
 <title>Add Review</title>
-<div>
-	<center>
-		<nav class="navbar">
-			<a href="home.jsp">Home</a>	
-			<a href="football.jsp">Football</a>	
-			<a href="basketball.jsp">Basketball</a>	
-			<a href="baseball.jsp">Baseball</a>	
-		</nav>
-	</center>
-</div>
 </head>
 <body>
+<div>
+	<center>	
+		<a href="home.jsp">Home</a>	
+		<a href="football.jsp">Football</a>	
+		<a href="basketball.jsp">Basketball</a>	
+		<a href="baseball.jsp">Baseball</a>
+	</center>
+</div>
 <br>
 <br>
 <form name = "typeOf" action = "<%=selected%>.jsp" method = "get">
