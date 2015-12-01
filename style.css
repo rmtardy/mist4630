@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+h1 { color: teal;
+font-weight: bold;
+text-align: center;
+font-family: Corben;}
+
+#mid {
+	text-align: center; 
+}
+
+#left {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#midDiv {
+	width: 150px;
+	height: 200px;
+	float:left; 
+	
+}
+ #right {
+ 	width: 200px;
+ 	height: 200px;
+ 	float:left;
+ }
+ 
+ #box {
+    width: 300px;
+    padding: 25px;
+    border: 25px solid navy;
+    margin: 0 auto;
+ }
+ 
+ #toolbar {
+    float: left;
+    width: 60px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    padding: 5px 10px; 
+    background: #ccc; 
+    border-bottom: 1px solid #333; 
+}
+ #toolbarDone {
+    float: left;
+    width: 200px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    padding: 5px 10px; 
+    background: #ccc; 
+    border-bottom: 1px solid #333; 
+}
+
+body {
+    margin-top: 35px;
+}
