@@ -6,27 +6,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="styles.css" type="text/css"/>
 <title>Home</title>
-</head>
-<div id="toolbar">
-    <p>Home</p>
-</div>
-<div id="toolbar"><p>Football</p></div>
-<div id="toolbar"><p>Basketball</p></div>
-<div id="toolbar"><p>Baseball</p></div>
-<div id="toolbarDone"><p></p></div>
-<body>
 <h1>Welcome to Sport Chirp!</h1>
-<p>We are the premier recruiting and review website for athletes, coaches and teams at the high school, college and pro levels. If you would like to view or add a review, follow the appropriate links. 
-</p>
+</head>
+
+<body>
+
+<p>We are the premier recruiting and review website for athletes, coaches and teams at the high school, college and pro levels. Select your sport:</p> 
+<div>
+	<center>
+		<nav class="navbar">	
+			<a href="football.jsp">Football</a>	
+			<a href="basketball.jsp">Basketball</a>	
+			<a href="baseball.jsp">Baseball</a>	
+		</nav>
+	</center>
+</div>
+
 <br>
-<form name ="addReview" action = "add.jsp" method = "get">
-<p>Want to add a review?
-<br>
-<input type = "submit" name = "add" value = "Add"/>
-</p>
-</form>
+
 <p>
-Want to search by name or location?
+Want to search by sport, name, or location?
 </p>
 <form name ="search" action = "search.jsp" method = "get">
 <input type = "text" name = "search" value =""/>
