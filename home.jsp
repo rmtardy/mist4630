@@ -6,19 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="styles.css" type="text/css"/>
 <title>Home</title>
-<h1>Welcome to Sport Chirp!</h1>
 </head>
-
 <body>
-
+<h1>Welcome to Sport Chirp!</h1>
 <p>We are the premier recruiting and review website for athletes, coaches and teams at the high school, college and pro levels. Select your sport:</p> 
 <div>
-	<center>
-		<nav class="navbar">	
-			<a href="football.jsp">Football</a>	
-			<a href="basketball.jsp">Basketball</a>	
-			<a href="baseball.jsp">Baseball</a>	
-		</nav>
+	<center>	
+		<a href="football.jsp">Football</a>	
+		<a href="basketball.jsp">Basketball</a>	
+		<a href="baseball.jsp">Baseball</a>
 	</center>
 </div>
 
