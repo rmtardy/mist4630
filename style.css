@@ -58,3 +58,7 @@ font-family: Corben;}
 body {
     margin-top: 35px;
 }
+
+.navbar {
+	text-decoration: none;
+}
