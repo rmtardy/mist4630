@@ -4,9 +4,36 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Basketball</title>
 </head>
 <body>
+<div>
+	<center>
+		<a href="home.jsp">Home</a>	
+		<a href="football.jsp">Football</a>	
+		<a href="basketball.jsp">Basketball</a>	
+		<a href="baseball.jsp">Baseball</a>
+	</center>
+</div>
+<h1 style="text-align: center"> Basketball</h1>
+<center>
+Select the level<br>
+<form action="basketball.jsp">
+  <select name="levelBasketball">
+    <option value="nba">NBA</option>
+    <option value="ncaa">NCAA</option>
+    <option value="ghsa">GHSA</option>
+  </select>
+  <input type="submit" value="Submit">
+</form>
+<!-- if NBA is selected, "Select Team" appears with the appropriate teams -->
+Select Team<br>
 
-</body>
+<form name ="addReview" action = "add.jsp" method = "get">
+<p>Want to add a review?
+<br>
+<input type = "submit" name = "add" value = "Add"/>
+</p>
+</form>
+</center></body>
 </html>
