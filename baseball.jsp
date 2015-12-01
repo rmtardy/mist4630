@@ -4,9 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Baseball</title>
+<h1>Baseball</h1>
 </head>
 <body>
-
+What level 
+<form name ="addReview" action = "add.jsp" method = "get">
+<p>Want to add a review?
+<br>
+<input type = "submit" name = "add" value = "Add"/>
+</p>
+</form>
 </body>
 </html>
