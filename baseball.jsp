@@ -5,15 +5,35 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Baseball</title>
-<h1>Baseball</h1>
 </head>
 <body>
-What level 
+<div>
+	<center>	
+		<a href="home.jsp">Home</a>	
+		<a href="football.jsp">Football</a>	
+		<a href="basketball.jsp">Basketball</a>	
+		<a href="baseball.jsp">Baseball</a>
+	</center>
+</div>
+<h1 style="text-align: center">Baseball</h1>
+<center>
+Select the level<br>
+<form action="baseball.jsp">
+  <select name="levelBaseball">
+    <option value="mlb">MLB</option>
+    <option value="ncaa">NCAA</option>
+    <option value="ghsa">GHSA</option>
+  </select>
+  <input type="submit" value="Submit">
+</form>
+<!-- if mlb is selected, "Select Team" appears with the appropriate teams -->
+Select Team<br>
+
 <form name ="addReview" action = "add.jsp" method = "get">
 <p>Want to add a review?
 <br>
 <input type = "submit" name = "add" value = "Add"/>
 </p>
 </form>
-</body>
+</center></body>
 </html>
