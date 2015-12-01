@@ -5,7 +5,6 @@
 
 String selected = "";
 
-
 %>
 
 
@@ -15,25 +14,30 @@ String selected = "";
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="styles.css" type="text/css"/>
 <title>Add Review</title>
-</head>
-<div id="toolbar">
-    <p>Home</p>
+<div>
+	<center>
+		<nav class="navbar">
+			<a href="home.jsp">Home</a>	
+			<a href="football.jsp">Football</a>	
+			<a href="basketball.jsp">Basketball</a>	
+			<a href="baseball.jsp">Baseball</a>	
+		</nav>
+	</center>
 </div>
-<div id="toolbar"><p>Football</p></div>
-<div id="toolbar"><p>Basketball</p></div>
-<div id="toolbar"><p>Baseball</p></div>
-<div id="toolbarDone"><p></p></div>
+</head>
 <body>
 <br>
 <br>
 <form name = "typeOf" action = "<%=selected%>.jsp" method = "get">
 <p>
-What is your review for?
-<input type = "radio" name = "position" value = "organization">Organization
-<input type = "radio" name = "position" value = "team">Team
-<input type = "radio" name = "position" value = "coach">Coach
-<input type = "radio" name = "position" value = "player">Player
-<input type = "submit" name = "submit" value ="Enter">
+What is your review for?<br>
+<a href="addOrganization.jsp">Organization</a><br>
+<a href="addTeam.jsp">Team</a><br>
+<a href="addCoach.jsp">Coach</a><br>
+<!-- <input type = "radio" name = "position" value = "addOrganization">Organization
+<input type = "radio" name = "position" value = "addTeam">Team
+<input type = "radio" name = "position" value = "addCoach">Coach
+<input type = "submit" name = "submit" value ="Enter"> -->
 
 </p>
 </form>
