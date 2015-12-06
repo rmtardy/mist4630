@@ -40,9 +40,25 @@ public class Team {
 		this.country = "No Country";
 		this.phone = "No Phone";
 		this.email = "No Email";
-		this.website = "No Website";
-			
-		
+		this.website = "No Website";	
+	}
+	
+	public Team (int teamID, String teamName, String gender, String ageRange, 
+			String level, String address, String city, String state, int zip, String region, String country, String phone, String email, String website) {
+		this.teamID = teamID;
+		this.teamName = teamName;
+		this.gender= gender;
+		this.ageRange = ageRange;
+		this.level = level;
+		this.address = address;
+		this.city = city;
+		this.state = state;
+		this.zip = zip;
+		this.region = region;
+		this.country = country;
+		this.phone = phone;
+		this.email = email;
+		this.website = website;
 	}
 
 
