@@ -89,7 +89,7 @@ public class Team {
 
 
 
-	public void setAge(String ageRange) {
+	public void setAgeRange(String ageRange) {
 		this.ageRange = ageRange;
 	}
 
