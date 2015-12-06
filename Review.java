@@ -11,6 +11,11 @@ public class Review {
 		this.typeID = 1;
 		
 	}
+	public Review(int reviewID, String content, int typeID) {
+		this.reviewID = reviewID;
+		this.content = content;
+		this.typeID = typeID;
+	}
 
 	public int getReviewID() {
 		return reviewID;
