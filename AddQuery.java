@@ -6,6 +6,11 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import model.Coach;
+import model.Player;
+import model.Team;
+import model.Organization;
+import model.Review;
+
 
 public class AddQuery {
 	
@@ -53,4 +58,25 @@ public class AddQuery {
 		
 	}
 
+	public void doAddPlayer(Player player){
+		String query = "insert into player (playerFName, playerLName, playerID) values (?, ?, ?)";
+		
+		try {
+			PreparedStatement ps = connection.prepareStatement(query);
+			
+			ps.setString(1, player.getPlayerFName());
+			ps.setString(2, player.getPlayerLName());
+			ps.setInt(3, player.getPlayerID());
+			
+			
+			ps.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
 }
