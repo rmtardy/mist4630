@@ -12,7 +12,7 @@ public class Team {
 	private int teamID;
 	private String teamName;
 	private String gender;
-	private int age;
+	private String ageRange;
 	private String level;
 	private String address;
 	private String city;
@@ -30,7 +30,7 @@ public class Team {
 		this.teamID = 1;
 		this.teamName = "No Team";
 		this.gender="No Gender";
-		this.age = 0;
+		this.ageRange = "No Specified Range";
 		this.level = "No Level";
 		this.address = "No Address";
 		this.city = "No City";
@@ -83,14 +83,14 @@ public class Team {
 
 
 
-	public int getAge() {
-		return age;
+	public String getAgeRange() {
+		return ageRange;
 	}
 
 
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setAge(String ageRange) {
+		this.ageRange = ageRange;
 	}
 
 
