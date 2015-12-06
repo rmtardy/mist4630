@@ -77,6 +77,35 @@ public class AddQuery {
 		}
 		
 	}
+	public void doAddTeam(Team team){
+		String query = "insert into team (teamName, teamID, gender, ageRange, level, address, city, state, zip, region, country, phone, email, website) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		
+		try {
+			PreparedStatement ps = connection.prepareStatement(query);
+			
+			ps.setString(1, team.getTeamName());
+			ps.setInt(2, team.getTeamID());
+			ps.setString(3, team.getGender());
+			ps.setString(4, team.getAgeRange());
+			ps.setString(5, team.getLevel());
+			ps.setString(6, team.getAddress());
+			ps.setString(7, team.getCity());
+			ps.setString(8, team.getState());
+			ps.setInt(9, team.getZip());
+			ps.setString(10, team.getRegion());
+			ps.setString(11, team.getCountry());
+			ps.setString(12, team.getPhone());
+			ps.setString(13, team.getEmail());
+			ps.setString(14, team.getWebsite());
+			
+			ps.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 	
 	
 }
