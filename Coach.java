@@ -1,3 +1,4 @@
+
 package model;
 
 public class Coach {
@@ -15,6 +16,11 @@ public class Coach {
 	
 }
 
+	public Coach(int coachID, String coachFName, String coachLName) {
+		this.coachID = coachID;
+		this.coachFName = coachFName;
+		this.coachLName = coachLName;
+	}
 
 	public int getCoachID() {
 		return coachID;
