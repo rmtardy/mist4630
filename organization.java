@@ -26,7 +26,18 @@ public class Organization {
 		this.orgName= "No Name"; 
 		
 	}
-
+	public Organization(int orgID, String orgAddress, String orgCity, String orgZip, String orgRegion, String orgCountry, String orgPhone, String webURL, String admissionsURL, String orgName) {
+		this.orgID= orgID;
+		this.orgAddress=  orgAddress;
+		this.orgCity = orgCity;
+		this.orgZip= orgZip; 
+		this.orgRegion= orgRegion;
+		this.orgCountry= orgCountry; 
+		this.orgPhone= orgPhone;
+		this.webURL= webURL; 
+		this.admissionsURL= admissionsURL; 
+		this.orgName= orgName;
+	}
 	public int getOrgID() {
 		return orgID;
 	}
