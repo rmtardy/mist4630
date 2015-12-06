@@ -9,6 +9,10 @@ public class Sport {
 			this.sportID = 1;
 			this.sportName = "No Name";
 		}
+		public Sport(int sportID, String sportName) {
+			this.sportID = sportID;
+			this.sportName = sportName;			
+		}
 
 		public int getSportID() {
 			return sportID;
@@ -27,5 +31,3 @@ public class Sport {
 		}
 
 	}
-
-
