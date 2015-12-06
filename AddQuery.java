@@ -12,6 +12,7 @@ import model.Organization;
 import model.Review;
 
 
+
 public class AddQuery {
 	
 	public Connection connection;
