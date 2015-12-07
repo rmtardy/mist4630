@@ -23,8 +23,8 @@
 	</tr>
 </table>
 <br>
-<form name ="addReview" action = "add.jsp" method = "get">
-<p>Want to add a review?
+<form name ="addOrganization" action = "addOrganization.jsp" method = "get">
+<p>Want to add an Organization?
 <br>
 <input type = "submit" name = "add" value = "Add"/>
 </p>
