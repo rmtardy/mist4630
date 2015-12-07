@@ -25,6 +25,9 @@
 <label>Team Level</label>
 <input type=text name=level value = ""/>
 <br />
+<label>Team Division</label>
+<input type=text name=level value = ""/>
+<br />
 <label>Address</label>
 <input type=text name=address value = ""/>
 <br />
