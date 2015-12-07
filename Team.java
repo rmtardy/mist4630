@@ -14,6 +14,7 @@ public class Team {
 	private String gender;
 	private String ageRange;
 	private String level;
+	private String division;
 	private String address;
 	private String city;
 	private String state;
@@ -32,6 +33,7 @@ public class Team {
 		this.gender="No Gender";
 		this.ageRange = "No Specified Range";
 		this.level = "No Level";
+		this.division = "No Division";
 		this.address = "No Address";
 		this.city = "No City";
 		this.state = "No State";
@@ -44,12 +46,13 @@ public class Team {
 	}
 	
 	public Team (int teamID, String teamName, String gender, String ageRange, 
-			String level, String address, String city, String state, int zip, String region, String country, String phone, String email, String website) {
+			String level,String division, String address, String city, String state, int zip, String region, String country, String phone, String email, String website) {
 		this.teamID = teamID;
 		this.teamName = teamName;
 		this.gender= gender;
 		this.ageRange = ageRange;
 		this.level = level;
+		this.division = division;
 		this.address = address;
 		this.city = city;
 		this.state = state;
@@ -120,6 +123,17 @@ public class Team {
 	public void setLevel(String level) {
 		this.level = level;
 	}
+	
+		public String getDivision() {
+		return division;
+	}
+
+
+
+	public void setDivision(String division) {
+		this.division = division;
+	}
+
 
 
 
