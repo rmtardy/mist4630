@@ -6,12 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import model.Coach;
-import model.Player;
-import model.Team;
 import model.Organization;
+import model.Player;
 import model.Review;
-
-
+import model.Team;
 
 public class AddQuery {
 	
@@ -40,14 +38,14 @@ public class AddQuery {
 	}
 	
 	public void doAddCoach(Coach coach){
-		String query = "insert into coach (coachFName, coachLName, coachID) values (?, ?, ?)";
+		String query = "insert into coach (coachID, coachFName, coachLName) values (?, ?, ?)";
 		
 		try {
 			PreparedStatement ps = connection.prepareStatement(query);
 			
-			ps.setString(1, coach.getCoachFName());
-			ps.setString(2, coach.getCoachLName());
-			ps.setInt(3, coach.getCoachID());
+			ps.setInt(1, coach.getCoachID());
+			ps.setString(2, coach.getCoachFName());
+			ps.setString(3, coach.getCoachLName());
 			
 			
 			ps.executeUpdate();
@@ -58,7 +56,6 @@ public class AddQuery {
 		}
 		
 	}
-
 	public void doAddPlayer(Player player){
 		String query = "insert into player (playerFName, playerLName, playerID) values (?, ?, ?)";
 		
@@ -105,8 +102,53 @@ public class AddQuery {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}	
+	
+	public void doAddOrg(Organization org){
+		String query = "insert into org (orgID, orgAddress, orgCity, orgState, orgZip, orgRegion, orgCountry, orgPhone, webURL, admissionsURL, orgName) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
+		try {
+			PreparedStatement ps = connection.prepareStatement(query);
+			
+			ps.setInt(1, org.getOrgID());
+			ps.setString(2, org.getOrgAddress());
+			ps.setString(3, org.getOrgCity());
+			ps.setString(4, org.getOrgState());
+			ps.setInt(5, org.getOrgZip());
+			ps.setString(6, org.getOrgRegion());
+			ps.setString(7, org.getOrgCountry());
+			ps.setString(8, org.getOrgPhone());
+			ps.setString(9, org.getWebURL());
+			ps.setString(10, org.getAdmissionsURL());
+			ps.setString(11, org.getOrgName());
+			
+			
+			
+			ps.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
+	public void doAddCoachReview (Review review){
+		String query = "insert into review (reviewID, content, sport, coach_coachID) values (?, ?, ?, ?)";
+		
+		try {
+			PreparedStatement ps = connection.prepareStatement(query);
+			
+			ps.setInt(1, review.getReviewID());
+			ps.setString(2, review.getContent());
+			ps.setString(3, review.getSport());
+			ps.setInt(4, review.getCoachID());
+			
+			ps.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	
+	}
 }
