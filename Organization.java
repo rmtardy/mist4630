@@ -5,21 +5,21 @@ public class Organization {
 	private int orgID;
 	private String orgAddress;
 	private String orgCity;
-	private String orgState;
-	private String orgZip;
+	private int orgZip;
 	private String orgRegion;
 	private String orgCountry;
 	private String orgPhone;
 	private String webURL;
 	private String admissionsURL;
 	private String orgName;
+	private String orgState; 
 	
 	public Organization(){
 		this.orgID=1;
 		this.orgAddress= "No Address"; 
 		this.orgCity = "No City";
-		this.orgState = "No State";
-		this.orgZip= "No Zip"; 
+		this.orgState= "No State";
+		this.orgZip= 00000; 
 		this.orgRegion= "No Region";
 		this.orgCountry= "No Country"; 
 		this.orgPhone= "No Phone";
@@ -28,7 +28,7 @@ public class Organization {
 		this.orgName= "No Name"; 
 		
 	}
-	public Organization(int orgID, String orgAddress, String orgCity, String orgState, String orgZip, String orgRegion, String orgCountry, String orgPhone, String webURL, String admissionsURL, String orgName) {
+	public Organization(int orgID, String orgAddress, String orgCity, String orgState, int orgZip, String orgRegion, String orgCountry, String orgPhone, String webURL, String admissionsURL, String orgName) {
 		this.orgID= orgID;
 		this.orgAddress=  orgAddress;
 		this.orgCity = orgCity;
@@ -40,12 +40,7 @@ public class Organization {
 		this.webURL= webURL; 
 		this.admissionsURL= admissionsURL; 
 		this.orgName= orgName;
-	}
-	public String getOrgState() {
-		return orgState;
-	}
-	public void setOrgState(String orgState) {
-		this.orgState = orgState;
+		 
 	}
 	public int getOrgID() {
 		return orgID;
@@ -71,11 +66,11 @@ public class Organization {
 		this.orgCity = orgCity;
 	}
 
-	public String getOrgZip() {
+	public int getOrgZip() {
 		return orgZip;
 	}
 
-	public void setOrgZip(String orgZip) {
+	public void setOrgZip(int orgZip) {
 		this.orgZip = orgZip;
 	}
 
@@ -125,6 +120,13 @@ public class Organization {
 
 	public void setOrgName(String orgName) {
 		this.orgName = orgName;
+	}
+	public String getOrgState(){
+		return orgState; 
+	}
+	
+	public void setOrgState(String orgState){
+		this.orgState = orgState; 
 	}
 
 }
