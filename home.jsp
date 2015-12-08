@@ -23,13 +23,13 @@
 
 
 <p>
-Want to search by sport, name, or location?<a href="search">Click here</a>
+Want to search by sport, name, or location?<a href="search.jsp"> Click here</a>
 </p>
 
 
 
 <p>
- All done? <a href="Login?logout=true">Logout</a>
+ All done? <a href="Login?logout=true"> Logout</a>
 </p>
 </body>
 </html>
