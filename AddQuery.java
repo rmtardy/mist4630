@@ -151,4 +151,24 @@ public class AddQuery {
 		}
 	
 	}
+	
+	public void doAddOrgReview (Review review){
+		String query = "insert into review (reviewID, content, sport, coach_coachID) values (?, ?, ?, ?)";
+		
+		try {
+			PreparedStatement ps = connection.prepareStatement(query);
+			
+			ps.setInt(1, review.getReviewID());
+			ps.setString(2, review.getContent());
+			ps.setString(3, review.getSport());
+			ps.setInt(4, review.getCoachID());
+			
+			ps.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+	}
 }
