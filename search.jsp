@@ -18,7 +18,7 @@
 </div>
 <br/>
 <p>Search by Sport:</p>
-<form name=searchSport action =sportSearchServlet method=get >
+<form name=searchSport action =sportSearchServlet method=POST >
 <label>Pick Sport</label>
 <select name = "sports">
 	<option value="football">Football</option>
@@ -30,7 +30,7 @@
 </form>
 <br/>
 <p>Search by Team:</p>
-<form name=searchTeam action =teamSearchServlet method=get >
+<form name=searchTeam action =teamSearchServlet method=POST >
 <label>Pick Sport</label>
 <select name = "sports">
 	<option value="team1">Team 1</option>
@@ -41,7 +41,7 @@
 </form>
 <br/>
 <p>Search by Location:</p>
-<form name=searchLocation action=locationSearchServlet method=get >
+<form name=searchLocation action=locationSearchServlet method=POST>
 <label>Pick Sport</label>
 <select name = "sports">
 	<option value="football">Location 1</option>
