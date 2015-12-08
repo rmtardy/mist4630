@@ -23,16 +23,13 @@
 
 
 <p>
-Want to search by sport, name, or location?
+Want to search by sport, name, or location?<a href="search">Click here</a>
 </p>
-<form name ="search" action = "search.jsp" method = "get">
-<input type = "text" name = "search" value =""/>
-<input type = "submit" name = "doSearh" value ="Search"/>
-</form>
+
 
 
 <p>
- All done? Click <a href="Login?logout=true">here</a> to log out.
+ All done? <a href="Login?logout=true">Logout</a>
 </p>
 </body>
 </html>
