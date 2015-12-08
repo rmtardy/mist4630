@@ -44,9 +44,9 @@
 <form name=searchLocation action=locationSearchServlet method=POST>
 <label>Pick Sport</label>
 <select name = "sports">
-	<option value="football">Location 1</option>
-	<option value="baseball">Location 2</option>	
-	<option value="basketball">Location 3</option>
+	<option value="location1">Location 1</option>
+	<option value="location2">Location 2</option>	
+	<option value="location3">Location 3</option>
 </select>
 <input type=submit name=searchLocation value="Search"/>
 </form>
