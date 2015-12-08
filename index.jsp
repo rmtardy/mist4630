@@ -4,36 +4,29 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="styles.css" type="text/css"/>
-<title>Sport Chirp</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<title>SportChirp</title>
 </head>
-<body>
-<h1>Sport Chirp Login</h1>
-<br></br> 
-<div id = "box">
+<body class="background">
+<center><div class="home">SportChirp Login</div></center>
+ <br>
+<center><div id = "box">
 <form name ="login" action = "home.jsp" method = "get">
 <p id = "mid">Enter Username: 
 <input type = "text" name = "username" value = ""/>
 <br> 
 Enter Password:
 <input type = "password" name = "password" value = ""/>
+<br>
 <input type = "submit" name = "enter" value = "Submit"/>
 </p>
-
 </form>
-</div>
-
-<p>
-Create a profile
-</p>
-<form name ="profile" action = "addPlayer.jsp" method ="get">
-<input type = "submit" name = "createProf" value = "Create Profile"/>
-
-</form>
+</div></center>
 <br>
-
-<p>
-<a href="read">View the database</a>
-</p>
+<center>
+<form name ="profile" action = "addPlayer.jsp" method ="get">
+Create a profile
+<input type = "submit" name = "createProf" value = "Create Profile"/>
+</form></center>
 </body>
 </html>
