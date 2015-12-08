@@ -3,18 +3,21 @@ package model;
 public class Review {
 	private int reviewID;
 	private String content;
-	private int typeID;
+	private String sport;
+	private int coachID;
 	
 	public Review(){
 		this.reviewID = 1;
 		this.content = "None";
-		this.typeID = 1;
+		this.sport = "None";
+		this.coachID = 00;
 		
 	}
-	public Review(int reviewID, String content, int typeID) {
+	public Review(int reviewID, String content, String sport, int coachID) {
 		this.reviewID = reviewID;
 		this.content = content;
-		this.typeID = typeID;
+		this.sport = sport;
+		this.coachID = coachID;
 	}
 
 	public int getReviewID() {
@@ -33,12 +36,24 @@ public class Review {
 		this.content = content;
 	}
 
-	public int getTypeID() {
-		return typeID;
+	public String getSport() {
+		return sport;
 	}
 
-	public void setTypeID(int typeID) {
-		this.typeID = typeID;
+	public void setSport(String sport) {
+		this.sport = sport;
+	}
+	/**
+	 * @return the coachID
+	 */
+	public int getCoachID() {
+		return coachID;
+	}
+	/**
+	 * @param coachID the coachID to set
+	 */
+	public void setCoachID(int coachID) {
+		this.coachID = coachID;
 	}
 
 }
