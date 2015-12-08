@@ -30,5 +30,10 @@ Want to search by sport, name, or location?
 <input type = "submit" name = "doSearh" value ="Search"/>
 </form>
 
+
+<p>
+ All done? Click <a href="Login?logout=true">here</a> to log out.
+</p>
 </body>
 </html>
+
