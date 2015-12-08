@@ -12,13 +12,15 @@
 <p>We are the premier recruiting and review website for athletes, coaches and teams at the high school, college and pro levels. Select your sport:</p> 
 <div>
 	<center>	
-		<a href="football.jsp">Football</a>	
-		<a href="basketball.jsp">Basketball</a>	
-		<a href="baseball.jsp">Baseball</a>
+		<a href="read">Coach</a>	
+		<a href="ReadTeamServlet">Team</a>	
+		<a href="ReadOrganizationServlet">Organization</a>
 	</center>
 </div>
 
 <br>
+
+
 
 <p>
 Want to search by sport, name, or location?
@@ -27,11 +29,6 @@ Want to search by sport, name, or location?
 <input type = "text" name = "search" value =""/>
 <input type = "submit" name = "doSearh" value ="Search"/>
 </form>
-
-<p>
- All done? Click <a href="Login?logout=true">here</a> to log out.
-</p>
-
 
 </body>
 </html>
