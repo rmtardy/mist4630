@@ -85,6 +85,21 @@ public class ReadRecord {
 		
 	}
 	
+	public void orgProfileJoin(){
+		String query = "select reviewID, content, sport, orgName from review, coach where review.org_orgID = ? and org.orgID = ?";
+		
+		try {
+			PreparedStatement ps = this.connection.prepareStatement(query);
+			ps.setInt(1, this.orgID);
+			ps.setInt(2, this.orgID);
+			this.results= ps.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 	public String getCoachReviewHTMLTable(){
 		String tableR ="";
 		try {
@@ -145,6 +160,49 @@ public class ReadRecord {
 				tableR +="<tr>";
 				tableR +="<td>";
 				tableR += "<a href = coachProfile.jsp>";
+				tableR +=  review.getReviewID();
+				tableR += "</a>";
+				tableR +="</td>";
+				tableR +="<td>";
+				tableR += review.getContent();
+				tableR +="</td>";
+				tableR +="<td>";
+				tableR += review.getSport(); 
+				tableR +="</td>";
+//				table +="<td class='edit'>";
+//			   table += "<a href=update?coachID=" + coach.getCoachID() + ">update</a>";
+//				table +="</td>";
+//				table += "<td class='edit'>";
+//				table += "<a href=delete?coachID=" + coach.getCoachID() + ">delete</a>";
+//				table +="</td>";
+				tableR +="</tr>";
+				
+			} while (results.next());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		tableR += "</table>";
+		return tableR;
+	}
+	
+	public String getOrgReviewHTMLTable(){
+		String tableR ="";
+		try {
+		this.results.next();
+		tableR += "Org:" + this.results.getString("orgName");
+		tableR += "<table border=1>";
+		do{
+				Review review = new Review();
+				review.setReviewID(this.results.getInt("reviewID"));
+				review.setContent(this.results.getString("content"));
+				review.setSport(this.results.getString("sport"));
+				
+				
+				
+				tableR +="<tr>";
+				tableR +="<td>";
+				tableR += "<a href = orgProfile.jsp>";
 				tableR +=  review.getReviewID();
 				tableR += "</a>";
 				tableR +="</td>";
