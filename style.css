@@ -76,14 +76,16 @@ body {
 	color: maroon;
 	float:left;
 	width: 80px;
+	position: relative;
 }
 
-.btn-coach {
+.btn-search {
 	border-radius: 0px;
-	height: 80px;
+	height: 30px;
 	color: maroon;
 	float:left;
 	width: 80px;
+	
 }
 
 .btn-org {
@@ -95,6 +97,11 @@ body {
 }
 
 .btn:hover {
+	color: white;
+	border-color: maroon;
+}
+
+.btn-search:hover {
 	color: white;
 	border-color: maroon;
 }
