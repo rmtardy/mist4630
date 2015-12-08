@@ -5,6 +5,7 @@ public class Organization {
 	private int orgID;
 	private String orgAddress;
 	private String orgCity;
+	private String orgState;
 	private String orgZip;
 	private String orgRegion;
 	private String orgCountry;
@@ -17,6 +18,7 @@ public class Organization {
 		this.orgID=1;
 		this.orgAddress= "No Address"; 
 		this.orgCity = "No City";
+		this.orgState = "No State";
 		this.orgZip= "No Zip"; 
 		this.orgRegion= "No Region";
 		this.orgCountry= "No Country"; 
@@ -26,10 +28,11 @@ public class Organization {
 		this.orgName= "No Name"; 
 		
 	}
-	public Organization(int orgID, String orgAddress, String orgCity, String orgZip, String orgRegion, String orgCountry, String orgPhone, String webURL, String admissionsURL, String orgName) {
+	public Organization(int orgID, String orgAddress, String orgCity, String orgState, String orgZip, String orgRegion, String orgCountry, String orgPhone, String webURL, String admissionsURL, String orgName) {
 		this.orgID= orgID;
 		this.orgAddress=  orgAddress;
 		this.orgCity = orgCity;
+		this.orgState = orgState;
 		this.orgZip= orgZip; 
 		this.orgRegion= orgRegion;
 		this.orgCountry= orgCountry; 
@@ -37,6 +40,12 @@ public class Organization {
 		this.webURL= webURL; 
 		this.admissionsURL= admissionsURL; 
 		this.orgName= orgName;
+	}
+	public String getOrgState() {
+		return orgState;
+	}
+	public void setOrgState(String orgState) {
+		this.orgState = orgState;
 	}
 	public int getOrgID() {
 		return orgID;
