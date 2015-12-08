@@ -4,33 +4,35 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="styles.css" type="text/css"/>
+<link rel="stylesheet" href="style.css" type="text/css"/>
 <title>Home</title>
 </head>
 <body>
-<h1>Welcome to Sport Chirp!</h1>
-<p>We are the premier recruiting and review website for athletes, coaches and teams at the high school, college and pro levels. Select your sport:</p> 
-<div>
-	<center>	
-		<a href="read">Coach</a>	
-		<a href="ReadTeamServlet">Team</a>	
-		<a href="ReadOrganizationServlet">Organization</a>
-	</center>
-</div>
+<div class="home">Welcome to SportChirp!</div>
+<p>We are the premier recruiting and review website for athletes, 
+coaches and teams at the high school, college and pro levels. 
+Select below to find the review you want or add your own:
+</p> 
 
+	<div>
+		<form method="post" action="read"><button type="submit" class="btn" >Coach</button></form>
+	</div>
+	<div>
+		<form method="post" action="ReadTeamServlet"><button type="submit" class="btn">Team</button></form>
+	</div>
+	<div>
+		<form method="post" action="ReadOrganizationServlet"><button type="submit" class="btn">Organization</button></form>	
+	</div>
 <br>
-
-
-
+<br>
+<br>
+<br>
 <p>
-Want to search by sport, name, or location?<a href="search.jsp"> Click here</a>
-</p>
-
-
-
-<p>
- All done? <a href="Login?logout=true"> Logout</a>
+Want to search by sport, name, or location?
+<form method="post" action="search.jsp"><button type="submit" class="btn-search">Click Here</button></form>
+<br><br>
+All Done?
+<form method="post" action="Login?logout=true"><button type="submit" class="btn-search">Logout</button></form>
 </p>
 </body>
 </html>
-
