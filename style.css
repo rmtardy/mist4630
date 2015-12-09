@@ -88,7 +88,7 @@ body {
 	
 }
 
-.btn-org {
+.btn-submit {
 	border-radius: 0px;
 	height: 80px;
 	color: maroon;
@@ -104,4 +104,12 @@ body {
 .btn-search:hover {
 	color: white;
 	border-color: maroon;
+}
+
+btn-nav {
+	border-radius: 0px;
+	height: 40px;
+	color: maroon;
+	float:right;
+	width: 80px;
 }
