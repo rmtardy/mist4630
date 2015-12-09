@@ -11,9 +11,12 @@
 <div class="home">Welcome to SportChirp!</div>
 <p>We are the premier recruiting and review website for athletes, 
 coaches and teams at the high school, college and pro levels. 
-Select below to find the review you want or add your own:
-</p> 
-
+Select below to find the review you want or search by sport:
+</p>
+<div style="margin-left:225px"> 
+	<div>
+		<form method="post" action="home.jsp"><button type="submit" class="btn" >Home</button></form>
+	</div>
 	<div>
 		<form method="post" action="read"><button type="submit" class="btn" >Coach</button></form>
 	</div>
@@ -23,16 +26,19 @@ Select below to find the review you want or add your own:
 	<div>
 		<form method="post" action="ReadOrganizationServlet"><button type="submit" class="btn">Organization</button></form>	
 	</div>
+	<div>
+		<form method="post" action="search.jsp"><button type="submit" class="btn" >Search</button></form>
+	</div>
+</div>
 <br>
 <br>
 <br>
 <br>
-<p>
-Want to search by sport, name, or location?
-<form method="post" action="search.jsp"><button type="submit" class="btn-search">Click Here</button></form>
-<br><br>
+<br>
+<div style="margin-left:375px">
 All Done?
+<br>
 <form method="post" action="Login?logout=true"><button type="submit" class="btn-search">Logout</button></form>
-</p>
+</div>
 </body>
 </html>
